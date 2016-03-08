@@ -8,7 +8,6 @@
   ],
   "license": "MIT",
   "type": "library",
-  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
       "Serff\\PhpciEnv\\": "src/"
@@ -18,13 +17,18 @@
     "phpci": {
       "pluginNamespace": "Serff\\PhpciEnv\\",
       "suppliedPlugins": [
-        {"name": "CpEnv", "class": "CpEnv"}
+        {
+          "name": "CpEnv",
+          "class": "CpEnv"
+        }
       ]
     }
   },
-  "require-dev": {
-    "phpunit/phpunit": "4.*",
+  "require": {
     "block8/phpci": "1.6.x"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
   },
   "autoload-dev": {
     "psr-4": {
