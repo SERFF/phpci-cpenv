@@ -1,5 +1,5 @@
 {
-  "name": "serff/phpciEnv",
+  "name": "serff/phpci-env",
   "description": "PHPCI plugin to copy env file",
   "keywords": [
     "phpci",
@@ -18,7 +18,10 @@
     "phpci": {
       "pluginNamespace": "Serff\\PhpciEnv\\",
       "suppliedPlugins": [
-        {"name": "CpEnv", "class": "CpEnv"}
+        {
+          "name": "CpEnv",
+          "class": "CpEnv"
+        }
       ]
     }
   },
